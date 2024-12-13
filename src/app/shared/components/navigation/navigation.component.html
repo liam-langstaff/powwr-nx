@@ -1,0 +1,32 @@
+<header>
+  <nav class="container p-4">
+    <div class="flex justify-between items-center">
+      <div class="logo">
+        <img [src]="'assets/img/powwr-ic.JPG'" alt="Logo">
+      </div>
+
+      <div class="actions flex gap-3 items-center">
+        <mat-icon [matMenuTriggerFor]="notificationsMenu">notifications_none</mat-icon>
+        <mat-icon [matMenuTriggerFor]="appsMenu">apps</mat-icon>
+        <mat-icon [matMenuTriggerFor]="profileMenu">account_circle</mat-icon>
+      </div>
+
+      <mat-menu #notificationsMenu="matMenu">
+        <button mat-menu-item>Notification 1</button>
+        <button mat-menu-item>Notification 2</button>
+      </mat-menu>
+
+      <mat-menu #appsMenu="matMenu">
+        <button mat-menu-item>App 1</button>
+        <button mat-menu-item>App 2</button>
+      </mat-menu>
+
+      <mat-menu #profileMenu="matMenu">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Logout</button>
+      </mat-menu>
+    </div>
+  </nav>
+
+</header>

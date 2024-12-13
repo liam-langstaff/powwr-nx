@@ -1,0 +1,30 @@
+@use 'variables' as *;
+
+button.mdc-button.pwr-button--primary {
+  border-radius: 8px;
+  background-color: $button-primary;
+  color: $white;
+  transition: background-color 0.1s ease-in;
+
+  &:hover {
+    background-color: $button-primary-hover;
+  }
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:focus-visible {
+  outline: 2px solid black;
+}

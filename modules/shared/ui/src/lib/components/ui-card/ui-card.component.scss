@@ -1,0 +1,11 @@
+.ui-card {
+  background: #fff;
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 100%;
+  transition: background 0.1s ease-in;
+
+  &:hover {
+    background: darken(#fff, 4%);
+  }
+}

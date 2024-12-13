@@ -1,0 +1,13 @@
+$base-font-size: 1rem;
+$scale-factor: 0.5;
+$display-levels: 6;
+
+@mixin display-classes($num) {
+  @for $i from 1 through $num {
+    .display-#{$i} {
+      font-size: $base-font-size + ($scale-factor * ($num - $i + 1));
+    }
+  }
+}
+
+@include display-classes($display-levels);

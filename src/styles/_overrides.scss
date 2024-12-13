@@ -1,0 +1,5 @@
+@use "../app/components/tender/deals/components/deals-table/deals-table.component.override" as deals-table;
+
+html {
+  @include deals-table.deals-table-component-override;
+}

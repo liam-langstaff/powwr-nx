@@ -1,0 +1,14 @@
+@mixin deals-table-component-override {
+  app-deals-table {
+    section#deals-table {
+      mat-paginator .mat-mdc-paginator-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      tbody > tr > td.mat-mdc-cell {
+        border-bottom-color: #dfdfdf;
+      }
+    }
+  }
+}

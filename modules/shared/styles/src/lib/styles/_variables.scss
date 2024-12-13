@@ -1,0 +1,9 @@
+@use "sass:color";
+
+$white: #fff;
+$black: #000;
+
+$bg-light: #F9FAFF;
+
+$button-primary: #002540;
+$button-primary-hover: color.adjust($button-primary, $lightness: 10%);

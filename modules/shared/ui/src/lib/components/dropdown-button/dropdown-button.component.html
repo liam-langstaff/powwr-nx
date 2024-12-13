@@ -1,0 +1,19 @@
+<button [disabled]="isLoading" mat-button [matMenuTriggerFor]="menu"
+        class="navy-button pwr-button--primary flex items-center">
+  <mat-icon>keyboard_arrow_down</mat-icon>
+  <div class="flex items-center gap-2">
+    <span> New tender</span>
+    @if (isLoading) {
+      <mat-progress-spinner
+        diameter="16"
+        mode="indeterminate"
+      ></mat-progress-spinner>
+    }
+  </div>
+</button>
+
+<mat-menu #menu="matMenu">
+  @for (item of menuList; track item.id) {
+    <button (click)="item.callback ? item.callback() : null" mat-menu-item>{{ item.label }}</button>
+  }
+</mat-menu>
